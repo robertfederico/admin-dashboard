@@ -11,11 +11,11 @@ Switch to the repo folder
 
     cd admin-dashboard
     
-Install all the dependencies using composer
+Install composer dependencies 
 
     composer install
 
-Install all the dependencies using npm
+Install NPM dependencies
 
     npm install
     
@@ -26,13 +26,21 @@ Copy the example env file and make the required configuration changes in the .en
 Generate a new application key
 
     php artisan key:generate
-    
+
+Create an empty database and update .env file
+
+    In the .env file fill in the DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD options to match the credentials of the database you just created.
+
 Run the database migrations and populate the database with seed data (**Set the database connection in .env before migrating**)
 
     php artisan migrate:refresh --seed
  
-Start the local development server
+Development
 
+    npm run dev
+
+Start the local development server
+    
     php artisan serve
 
 You can now access the server at http://localhost:8000
