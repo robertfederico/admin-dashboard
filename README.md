@@ -29,7 +29,8 @@ Generate a new application key
 
 Create an empty database and update .env file
 
-    In the .env file fill in the DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD options to match the credentials of the database you just created.
+    In the .env file fill in the DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD 
+    options to match the credentials of the database you just created.
 
 Run the database migrations and populate the database with seed data (**Set the database connection in .env before migrating**)
 
